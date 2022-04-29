@@ -1,0 +1,38 @@
+<table class="ui fixed striped table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rlease Date</th>
+      <th>Genre</th>
+      <th>Rating</th>
+      <th>Desc</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each gamelist.games}}
+      <tr>
+        <td>
+          {{name}}
+        </td>
+        <td>
+          {{releaseDate}}
+        </td>
+        <td>
+          {{genre}}
+        </td>
+        <td>
+          {{rating}}
+        </td>
+                <td>
+          {{desc}}
+        </td>
+        <td>
+          <a href="/game-view/{{../gamelist.id}}/deleteGame/{{id}}" class="ui tiny black button">Delete Game</a>
+        </td>
+        <td>
+          <a href="/game-view/{{../gamelist.id}}/updateGame/" class="ui tiny black button">Update Game</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

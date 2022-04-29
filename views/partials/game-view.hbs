@@ -1,0 +1,13 @@
+{{#each gamelists}}
+<section class="ui stacked segment">
+    <h2 class="ui header">
+      {{title}}
+    </h2>
+    <a href="/game-view/{{id}}" class="ui icon button">
+      <i class="ui open folder icon"></i>
+    </a>
+    <a href="/dashboard/deleteGamelist/{{id}}" class="ui icon button delplaylist">
+      <i class="ui trash icon"></i>
+    </a>
+  </section>
+{{/each}}
